@@ -1,7 +1,7 @@
 from pathlib import Path
 from colorama import Fore, Style
 
-def show_dir_structure(path: Path, indent: str = ""):
+def show_dir_structure(path: Path, indent: str = "") -> None:
     try:
         for el in path.iterdir():
             if el.is_file():
